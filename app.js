@@ -109,6 +109,29 @@
     if (!inside) dlg.close();
   });
 
+  // ---------- case reels: hover or focus a row to swap the preview, click to watch with sound ----------
+  const preview = document.querySelector('.case-preview');
+  if (preview) {
+    const pv = preview.querySelector('video');
+    const pstill = preview.querySelector('.still');
+    const rows = document.querySelectorAll('.case-row');
+    const pick = (row) => {
+      if (row.classList.contains('is-active')) return;
+      rows.forEach((r) => r.classList.toggle('is-active', r === row));
+      ['play', 'title', 'poster'].forEach((k) => { preview.dataset[k] = row.dataset[k]; });
+      pstill.src = row.dataset.poster;
+      preview.classList.add('is-swapping');
+      pv.poster = row.dataset.poster;
+      pv.src = row.dataset.loop;
+      pv.addEventListener('loadeddata', () => preview.classList.remove('is-swapping'), { once: true });
+      if (!reduce) pv.play().catch(() => {});
+    };
+    rows.forEach((row) => {
+      row.addEventListener('mouseenter', () => pick(row));
+      row.addEventListener('focus', () => pick(row));
+    });
+  }
+
   // ---------- process accordion ----------
   const stages = document.querySelectorAll('.stage');
   stages.forEach((st) => st.querySelector('.stage-tab').addEventListener('click', () => {
