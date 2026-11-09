@@ -1,6 +1,29 @@
 // Skald AI lookbook: reveals, video player dialog, song tiles, process accordion, Telegram brief.
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const twa = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+  const inTMA = Boolean(twa && twa.platform && twa.platform !== 'unknown');
+
+  if (inTMA) {
+    document.documentElement.classList.add('is-tma');
+    try {
+      twa.ready();
+      twa.expand();
+      if (twa.setHeaderColor) twa.setHeaderColor('#12110F');
+      if (twa.setBackgroundColor) twa.setBackgroundColor('#12110F');
+      if (twa.setBottomBarColor) twa.setBottomBarColor('#12110F');
+    } catch (_) {}
+
+    document.addEventListener('click', (ev) => {
+      const tgLink = ev.target.closest('a[href^="https://t.me/"]');
+      if (!tgLink || !twa.openTelegramLink) return;
+      ev.preventDefault();
+      try {
+        if (twa.HapticFeedback) twa.HapticFeedback.impactOccurred('light');
+      } catch (_) {}
+      twa.openTelegramLink(tgLink.href);
+    });
+  }
 
   // ---------- staggered reveals: never leaves content hidden ----------
   document.querySelectorAll('[data-stagger]').forEach((group) => {
@@ -168,6 +191,14 @@
     if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
     const note = form.querySelector('[data-copied]');
     note.classList.add('is-flash');
-    window.open(`https://t.me/Romheimr?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    const tgUrl = `https://t.me/Romheimr?text=${encodeURIComponent(text)}`;
+    if (inTMA && twa.openTelegramLink) {
+      try {
+        if (twa.HapticFeedback) twa.HapticFeedback.notificationOccurred('success');
+      } catch (_) {}
+      twa.openTelegramLink(tgUrl);
+    } else {
+      window.open(tgUrl, '_blank', 'noopener');
+    }
   });
 })();
