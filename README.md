@@ -11,7 +11,7 @@
 
 <img src="media/og-cover.jpg" alt="Skald AI: кадры из рекламных роликов Crystal Trees, Северии и Bubble Lab" width="100%">
 
-[Открыть сайт](https://skald-ai.github.io/) · [Витрина](#-что-внутри) · [Локальный запуск](#-локальный-запуск) · [Структура](#-структура) · [Сообщить об ошибке](https://github.com/skald-ai/skald-ai.github.io/issues/new)
+[Открыть сайт](https://skald-ai.github.io/) · [Открыть в Telegram](https://t.me/skald_studio_bot/studio) · [Витрина](#-что-внутри) · [Локальный запуск](#-локальный-запуск) · [Структура](#-структура) · [Сообщить об ошибке](https://github.com/skald-ai/skald-ai.github.io/issues/new)
 
 </div>
 
@@ -31,7 +31,7 @@
 | ◇ Быстрый бриф | Выбор формата и переход в диалог [@Romheimr](https://t.me/Romheimr) с готовым текстом | Копирование в буфер + `t.me` |
 
 > [!NOTE]
-> Полный архив свежих видео-кейсов (включая разборы «До / После 4K» и витрины для WB / Ozon) публикуется в Telegram-канале [@skald_ai_gen](https://t.me/skald_ai_gen/101).
+> Полный архив свежих видео-кейсов (включая разборы «До / После 4K» и витрины для WB / Ozon) публикуется в Telegram-канале [@skald_ai_gen](https://t.me/skald_ai_gen/104), а сам лукбук доступен как встроенное приложение [Telegram Mini App](https://t.me/skald_studio_bot/studio).
 
 ## ◇ Локальный запуск
 
