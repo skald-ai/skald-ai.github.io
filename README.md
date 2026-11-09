@@ -4,14 +4,14 @@
 
 **Студийный веб-лукбук: рекламные ролики, сквозные бренд-герои и фирменные песни для бизнеса.**
 
-[![Issues](https://img.shields.io/github/issues/SkrudjReal/skald-ai?style=for-the-badge&color=f0abfc&labelColor=19152e)](https://github.com/SkrudjReal/skald-ai/issues)
-[![Pull requests](https://img.shields.io/github/issues-pr/SkrudjReal/skald-ai?style=for-the-badge&label=Pull%20requests&color=a5b4fc&labelColor=19152e)](https://github.com/SkrudjReal/skald-ai/pulls)
-[![Stars](https://img.shields.io/github/stars/SkrudjReal/skald-ai?style=for-the-badge&color=c4b5fd&labelColor=19152e)](https://github.com/SkrudjReal/skald-ai/stargazers)
-[![Forks](https://img.shields.io/github/forks/SkrudjReal/skald-ai?style=for-the-badge&color=a5b4fc&labelColor=19152e)](https://github.com/SkrudjReal/skald-ai/forks)
+[![Issues](https://img.shields.io/github/skald-ai/skald-ai.github.io/skald-ai.github.io?style=for-the-badge&color=f0abfc&labelColor=19152e)](https://skald-ai/skald-ai.github.io/skald-ai.github.io/issues)
+[![Pull requests](https://img.shields.io/github/skald-ai/skald-ai.github.io/skald-ai.github.io?style=for-the-badge&label=Pull%20requests&color=a5b4fc&labelColor=19152e)](https://skald-ai/skald-ai.github.io/skald-ai.github.io/pulls)
+[![Stars](https://img.shields.io/github/skald-ai/skald-ai.github.io/skald-ai.github.io?style=for-the-badge&color=c4b5fd&labelColor=19152e)](https://skald-ai/skald-ai.github.io/skald-ai.github.io/stargazers)
+[![Forks](https://img.shields.io/github/skald-ai/skald-ai.github.io/skald-ai.github.io?style=for-the-badge&color=a5b4fc&labelColor=19152e)](https://skald-ai/skald-ai.github.io/skald-ai.github.io/forks)
 
 <img src="media/og-cover.jpg" alt="Skald AI: кадры из рекламных роликов Crystal Trees, Северии и Bubble Lab" width="100%">
 
-[Витрина](#-что-внутри) · [Локальный запуск](#-локальный-запуск) · [Структура](#-структура) · [Сообщить об ошибке](https://github.com/SkrudjReal/skald-ai/issues/new)
+[Открыть сайт](https://skald-ai.github.io/) · [Витрина](#-что-внутри) · [Локальный запуск](#-локальный-запуск) · [Структура](#-структура) · [Сообщить об ошибке](https://skald-ai/skald-ai.github.io/skald-ai.github.io/issues/new)
 
 </div>
 
